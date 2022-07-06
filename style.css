@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100;200;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anek Malayalam', sans-serif;
+}
+body{
+    background-color: rgb(240, 240, 240);
+}
+
+section{
+    max-width: 1200px;
+    padding: 1rem 1.3rem;
+    margin: 0 auto;
+}
+
+.nameteam{
+    max-width: 400px;
+    box-shadow: -1px -1px 2px rgba(94, 104, 121,0.288),3px 3px 7px rgba(94, 104, 121,0.288);
+    margin: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    animation: name 20s linear infinite;
+}
+@keyframes name{
+    0%{
+        background: linear-gradient(to right,rgba(44, 229, 130, 0.326),rgba(154, 20, 143,0.326));
+    }
+    33%{
+        background: linear-gradient(to bottom,rgba(44, 229, 130, 0.326),rgba(154, 20, 143,0.326));
+    }
+    66%{
+        background: linear-gradient(to left,rgba(44, 229, 130, 0.326),rgba(154, 20, 143,0.326));
+    }
+    100%{
+        background: linear-gradient(to top,rgba(44, 229, 130, 0.326),rgba(154, 20, 143,0.326));
+    }
+}
+.nameteam h2{
+    text-align: center;
+}
+
+.text-anything{
+    background-color: #fff;
+    margin: 0 auto;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1),-2px -2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 1.2rem;
+}
+.text-anything p{
+    color: black;
+    font-size: 1.3rem;
+    text-indent: 50px;
+    /* user-select: none; */
+}
+.text-anything p a{
+    text-decoration: none;
+    color: blue;
+}
+.text-anything img{
+    margin-top: 10px;
+    width: 150px;
+}
+
+.title h2{
+    padding: 10px;
+    background-color: rgb(240, 240, 240);
+}
+.image{
+    width: 100%;
+    object-fit: cover;
+}
+.margin{
+    margin-top: 7px;
+}
+
+.maps{
+    width: 100%;
+    height: 50vh;
+    padding: 0;
+}
+.maps iframe{
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+.content-box{
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1rem;
+    align-items: flex-start;
+}
+.content-box .box{
+    height: 360px;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0.5px -0.5px 5px rgba(79, 79, 79, 0.492), inset 0px -5px 5px rgba(0, 0, 0, 0.400);
+}
+.box .image{
+    height: 82%;
+}
+.box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.box .name_product{
+    height: 18%;
+    background: linear-gradient(to right,rgba(154, 20, 143, 0.415),rgba(44, 229, 130, 0.495));
+    display: flex;
+    padding: 0 1.5em;
+    align-items: center;
+    justify-content: space-between;
+}
+.box .name_product p{
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 778px)
+{
+    .box .image{
+        height: 88%;
+    }
+    .box .name_product{
+        height: 12%;
+    }
+
+
+}
+
+
+@media (max-width: 576px)
+{
+    .nameteam{
+        max-width: 100%;
+    }
+
+
+
+}
